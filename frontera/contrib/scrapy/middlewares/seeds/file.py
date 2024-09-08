@@ -16,7 +16,7 @@ class FileSeedLoader(SeedLoader):
         return self.load_seeds_from_file(self.seeds_source)
 
     def load_seeds_from_file(self, file_path):
-        with codecs.open(file_path, 'rU') as f:
+        with codecs.open(file_path, 'r') as f:
             return self.load_seeds_from_data((f))
 
     def load_seeds_from_data(self, data):
